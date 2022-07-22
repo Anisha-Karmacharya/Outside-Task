@@ -19,6 +19,7 @@
     --dark-grey: #3c3c3c;
     --dark-red: #8C2531;
     --beige: #D7C3AE;
+    --white: #FFFFFF;
     /* Font and typography */
     /*.5rem = 8px | 1rem = 16px ...*/
     --header-font: 'Galaxie Copernicus';
@@ -84,6 +85,7 @@ textarea{
 
 body{
     margin: var(--header-height) 0 0 0;
+    background-color: var(--dusty-pink) !important;
 }
 
 button{

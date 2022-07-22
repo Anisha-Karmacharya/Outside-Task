@@ -1,0 +1,55 @@
+.hero{
+    position: relative;
+    z-index: -1;
+    padding-bottom: 60px;
+    &__bg{
+        height: 100%;
+        width: 98%;
+        background-color: var(--white);
+        position: absolute;
+        top: -216px;
+        right: 0;
+        z-index: -2;
+    }
+    &__main{
+        margin-top: 40px;
+        margin-left: 85px;
+        margin-right: 100px;
+        .main{
+            &__text{
+                color: var(--dark-blue);
+                font-family: var(--header-font);
+                font-size: 64px;
+                line-height: 110%;
+                letter-spacing: -0.02em;
+
+            }
+            &__button{
+                float: right;
+                
+            }
+        }
+        @media only screen and (max-width: 768px) {
+
+            &__main {
+                padding: 0 32px !important;
+                margin-top: 20px !important;
+              }
+              &__button{
+                margin-top: 20px !important;
+                float: left !important;
+            }
+        }
+    }
+    &__image{
+        margin-top: 80px;
+        max-height: 565px;
+        display: flex;
+        justify-content: flex-end;
+        img{
+            width: 95%;
+            float: right;
+            transform-origin: top center;
+        }
+    }
+}

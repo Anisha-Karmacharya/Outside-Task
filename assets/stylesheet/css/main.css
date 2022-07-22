@@ -16,6 +16,7 @@
   --dark-grey: #3c3c3c;
   --dark-red: #8C2531;
   --beige: #D7C3AE;
+  --white: #FFFFFF;
   /* Font and typography */
   /*.5rem = 8px | 1rem = 16px ...*/
   --header-font: "Galaxie Copernicus";
@@ -76,6 +77,7 @@ textarea {
 
 body {
   margin: var(--header-height) 0 0 0;
+  background-color: var(--dusty-pink) !important;
 }
 
 button {
@@ -109,6 +111,56 @@ img {
   .nav_list {
     column-gap: 0;
   }
+}
+.hero {
+  position: relative;
+  z-index: -1;
+  padding-bottom: 60px;
+}
+.hero__bg {
+  height: 100%;
+  width: 98%;
+  background-color: var(--white);
+  position: absolute;
+  top: -216px;
+  right: 0;
+  z-index: -2;
+}
+.hero__main {
+  margin-top: 40px;
+  margin-left: 85px;
+  margin-right: 100px;
+}
+.hero__main .main__text {
+  color: var(--dark-blue);
+  font-family: var(--header-font);
+  font-size: 64px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+}
+.hero__main .main__button {
+  float: right;
+}
+@media only screen and (max-width: 768px) {
+  .hero__main__main {
+    padding: 0 32px !important;
+    margin-top: 20px !important;
+  }
+  .hero__main__button {
+    margin-top: 20px !important;
+    float: left !important;
+  }
+}
+.hero__image {
+  margin-top: 80px;
+  max-height: 565px;
+  display: flex;
+  justify-content: flex-end;
+}
+.hero__image img {
+  width: 95%;
+  float: right;
+  transform-origin: top center;
 }
 
 /*# sourceMappingURL=main.css.map */
