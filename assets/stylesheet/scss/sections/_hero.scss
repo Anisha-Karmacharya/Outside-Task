@@ -19,27 +19,29 @@
             &__text{
                 color: var(--dark-blue);
                 font-family: var(--header-font);
-                font-size: 64px;
+                font-size: var(--h1-font-size);
                 line-height: 110%;
                 letter-spacing: -0.02em;
 
             }
             &__button{
                 float: right;
-                
             }
         }
-        @media only screen and (max-width: 768px) {
+    }
+    @media only screen and (max-width: 768px) {
 
-            &__main {
-                padding: 0 32px !important;
-                margin-top: 20px !important;
-              }
-              &__button{
+        &__main {
+            padding: 0 32px !important;
+            margin: 20px 5px 0px 5px;
+          }
+          .main{
+            &__button{
                 margin-top: 20px !important;
                 float: left !important;
             }
-        }
+          }
+          
     }
     &__image{
         margin-top: 80px;

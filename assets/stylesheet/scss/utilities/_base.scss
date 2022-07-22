@@ -1,11 +1,11 @@
 
 @font-face {
     font-family: 'Galaxie Copernicus';
-    src: url("../fonts/GalaxieCopernicus-Book.otf");
+    src: url("../../../fonts/GalaxieCopernicus-Book.otf");
 }
 @font-face {
     font-family: 'Inter';
-    src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
+    src: url("../../../fonts/Inter-VariableFont_slnt\,wght.ttf");
 }
 // Variable
 :root{
@@ -21,12 +21,9 @@
     --beige: #D7C3AE;
     --white: #FFFFFF;
     /* Font and typography */
-    /*.5rem = 8px | 1rem = 16px ...*/
     --header-font: 'Galaxie Copernicus';
     --body-font: 'Inter';
-
-    --big-font-size: 2rem;
-    --h1-font-size: 1.5rem;
+    --h1-font-size: 32px;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
     --normal-font-size: .938rem;
@@ -36,7 +33,7 @@
     // Responsive typography
     @media screen and (min-width: 968px){
         --big-font-size: 3.5rem;
-        --h1-font-size: 2.25rem;
+        --h1-font-size: 64px;
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
         --normal-font-size: 1rem;
@@ -79,7 +76,7 @@ body,
 button,
 input,
 textarea{
-    font-family: var(--body-font);
+    font-family: var(--body-font) !important;
     font-size: var(--normal-font-size);
 }
 

@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Galaxie Copernicus";
-  src: url("../fonts/GalaxieCopernicus-Book.otf");
+  src: url("../../../fonts/GalaxieCopernicus-Book.otf");
 }
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/Inter-VariableFont_slnt,wght.ttf");
+  src: url("../../../fonts/Inter-VariableFont_slnt,wght.ttf");
 }
 :root {
   --header-height: 3.5rem;
@@ -18,11 +18,9 @@
   --beige: #D7C3AE;
   --white: #FFFFFF;
   /* Font and typography */
-  /*.5rem = 8px | 1rem = 16px ...*/
   --header-font: "Galaxie Copernicus";
   --body-font: "Inter";
-  --big-font-size: 2rem;
-  --h1-font-size: 1.5rem;
+  --h1-font-size: 32px;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
   --normal-font-size: .938rem;
@@ -48,7 +46,7 @@
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
-    --h1-font-size: 2.25rem;
+    --h1-font-size: 64px;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
@@ -71,7 +69,7 @@ body,
 button,
 input,
 textarea {
-  font-family: var(--body-font);
+  font-family: var(--body-font) !important;
   font-size: var(--normal-font-size);
 }
 
@@ -134,7 +132,7 @@ img {
 .hero__main .main__text {
   color: var(--dark-blue);
   font-family: var(--header-font);
-  font-size: 64px;
+  font-size: var(--h1-font-size);
   line-height: 110%;
   letter-spacing: -0.02em;
 }
@@ -142,11 +140,11 @@ img {
   float: right;
 }
 @media only screen and (max-width: 768px) {
-  .hero__main__main {
+  .hero__main {
     padding: 0 32px !important;
-    margin-top: 20px !important;
+    margin: 20px 5px 0px 5px;
   }
-  .hero__main__button {
+  .hero .main__button {
     margin-top: 20px !important;
     float: left !important;
   }
@@ -161,6 +159,35 @@ img {
   width: 95%;
   float: right;
   transform-origin: top center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+}
+.button__text, .button__icon {
+  padding: 23px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+.button__text p, .button__icon p {
+  color: var(--dark-grey) !important;
+}
+.button__text {
+  border-right: 1px solid var(--mid-grey) !important;
+}
+.button__text p {
+  font-family: var(--body-font);
+}
+.button__icon {
+  display: grid;
+  place-items: center;
+}
+.button--primary {
+  background-color: var(--white);
+  border: 1px solid var(--mid-grey);
+  border-radius: 2px;
 }
 
 /*# sourceMappingURL=main.css.map */

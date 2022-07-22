@@ -1,0 +1,32 @@
+.button{
+    display: flex;
+    align-items: center;
+    &__text, &__icon{
+        p{
+            color: var(--dark-grey) !important;
+        }
+       
+        padding: 23px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 18px;
+        
+    }
+    &__text{
+        border-right: 1px solid var(--mid-grey) !important;
+        p{
+            font-family: var(--body-font);
+        }
+    }
+    &__icon{
+        display: grid;
+        place-items: center;
+       
+    }
+    &--primary{
+        background-color: var(--white);
+        border: 1px solid var(--mid-grey);
+        border-radius: 2px;
+        
+    }
+}
