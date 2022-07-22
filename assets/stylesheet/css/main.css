@@ -284,7 +284,7 @@ img {
   color: var(--dark-blue);
 }
 .news__layout .news__item .item__image {
-  height: 250px;
+  height: 350px;
   background-size: cover;
 }
 .news__layout .news__item .item__date {
