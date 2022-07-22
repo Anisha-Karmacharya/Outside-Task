@@ -199,9 +199,6 @@ img {
   color: var(--dark-grey) !important;
   margin-bottom: 0px;
 }
-.button__text {
-  border-right: 1px solid var(--mid-grey) !important;
-}
 .button__text p {
   font-family: var(--body-font);
 }
@@ -213,6 +210,11 @@ img {
   background-color: var(--white);
   border: 1px solid var(--mid-grey);
   border-radius: 2px;
+}
+.button--secondary {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--mid-grey);
 }
 @media (max-width: 768px) {
   .button__text, .button__icon {
