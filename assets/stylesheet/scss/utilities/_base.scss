@@ -24,9 +24,11 @@
     --header-font: 'Galaxie Copernicus';
     --body-font: 'Inter';
     --h1-font-size: 32px;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: .938rem;
+    --h2-font-size: 24px;
+    --h3-font-size: 20px;
+    --h5-font-size: 14px;
+    --h5-font-size: 10px;
+    --p1-font-size: .938rem;
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
 
@@ -34,9 +36,11 @@
     @media screen and (min-width: 968px){
         --big-font-size: 3.5rem;
         --h1-font-size: 64px;
-        --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
+        --h2-font-size: 44px;
+        --h3-font-size: 32px;
+        --h5-font-size: 24px;
+        --h6-font-size: 14px;
+        --p1-font-size: 18px;
         --small-font-size: .875rem;
         --smaller-font-size: .813rem;
     }
