@@ -275,6 +275,7 @@ img {
   font-weight: var(--font-bold);
 }
 .news__layout .news__item h6 {
+  font-weight: var(--font-bold);
   font-size: var(--h6-font-size);
   line-height: 14px;
   letter-spacing: 0.05em;
@@ -334,6 +335,11 @@ img {
   .news__layout {
     overflow: scroll;
     grid-template-columns: repeat(9, 150px);
+  }
+  .news__layout .news__item .item__image {
+    width: 224px;
+    height: 140px;
+    background-size: cover;
   }
   .news__layout .news__item:nth-child(1) {
     grid-column: 1/3;
