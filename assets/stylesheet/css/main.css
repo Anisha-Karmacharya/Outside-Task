@@ -120,7 +120,7 @@ img {
   width: 98%;
   background-color: var(--white);
   position: absolute;
-  top: -216px;
+  bottom: 295px;
   right: 0;
   z-index: -2;
   margin-left: 85px;
@@ -138,6 +138,7 @@ img {
   line-height: 110%;
   letter-spacing: -0.02em;
   width: 60%;
+  font-style: normal;
 }
 .hero__main .main__button {
   float: right;
@@ -170,7 +171,7 @@ img {
     width: 70.75%;
   }
   .hero__bg {
-    top: -130px;
+    bottom: 150px;
   }
   .hero__image {
     margin-top: 50px !important;
