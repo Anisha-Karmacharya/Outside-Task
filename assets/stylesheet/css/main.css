@@ -621,5 +621,9 @@ img {
     grid-row: 2/6;
   }
 }
+.footer {
+  background-color: var(--dark-grey);
+  padding: 76px 120px;
+}
 
 /*# sourceMappingURL=main.css.map */
