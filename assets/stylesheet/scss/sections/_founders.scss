@@ -31,3 +31,33 @@
         }
     }
 }
+@media only screen and (max-width: 768px) {
+    .founders{
+        padding: 40px 32px;
+        background-image: linear-gradient(to bottom, var(--beige) 50%, var(--white),  var(--white) 50%) ;
+        &__heading{
+           padding-left: 16px;
+        }
+        &__container{
+            padding-left: 16px;
+            padding-right: 16px;
+            .container__all-founders{
+                margin-top: 16px;
+                .all-founders__founder{
+                    .founder__detail{
+                        padding-bottom: 3px;
+                        padding-right: 32px;
+                        padding-left: 16px;
+                    }
+                    &:last-child{
+                        display: flex;
+                    }
+                    .founder__name:nth-child(2){
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+  }
+  
