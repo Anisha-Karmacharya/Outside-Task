@@ -75,9 +75,9 @@
             overflow: scroll;
             grid-template-columns: repeat(9, 150px);
             .news__item{
+                padding: 16px;
                 .item{
                     &__image{
-                        width: 224px;
                         height: 140px;
                         background-size: cover;
                     }
