@@ -26,6 +26,7 @@
     --h5-font-size: 14px;
     --h6-font-size: 10px;
     --p1-font-size: 14px;
+    --p2-font-size: 12px;
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
 
@@ -38,6 +39,7 @@
         --h5-font-size: 24px;
         --h6-font-size: 14px;
         --p1-font-size: 18px;
+        --p2-font-size: 14px;
         --small-font-size: .875rem;
         --smaller-font-size: .813rem;
     }
@@ -114,7 +116,15 @@ p{
     font-weight: var(--font-normal) !important;
     font-size: var(--p1-font-size)!important;
     line-height: 140%;
-    // letter-spacing: -0.01em;
+    letter-spacing: 0.02em;
+}
+.p2{
+    font-family: var(--body-font)!important;
+    font-style: normal !important;
+    font-weight: var(--font-normal) !important;
+    font-size: var(--p2-font-size)!important;
+    line-height: 140%;
+    color: var(--white);
 }
 h5{
     font-family: 'Inter';
