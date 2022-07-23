@@ -653,12 +653,40 @@ img {
 }
 .footer__links .links__pages {
   width: 30%;
+  display: flex;
+  justify-content: space-between;
 }
 .footer__info, .footer__copy {
   opacity: 0.5;
 }
 .footer__info {
   width: 17%;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 32px;
+  }
+  .footer .social-1, .footer .social-2 {
+    gap: 30px;
+  }
+  .footer .social-1 {
+    display: flex;
+    justify-content: end;
+  }
+  .footer .social-2 {
+    display: none !important;
+  }
+  .footer__links {
+    margin-top: 27px;
+    padding-top: 20px;
+  }
+  .footer__links .links__pages {
+    display: none !important;
+  }
+  .footer__info, .footer__copy {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
