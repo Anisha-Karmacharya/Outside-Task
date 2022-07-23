@@ -543,6 +543,11 @@ img {
   background-color: var(--white);
   padding: 60px 120px;
 }
+.gallery__layout {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(4, auto);
+}
 .gallery__layout h5 {
   color: var(--dark-blue);
 }
