@@ -398,4 +398,32 @@ img {
   width: 95%;
 }
 
+@media only screen and (max-width: 768px) {
+  .mission {
+    padding: 0px;
+  }
+  .mission__bg {
+    height: 82%;
+    width: 95%;
+  }
+  .mission__container {
+    padding: 40px 16px 0px 32px;
+  }
+  .mission__container .container__heading {
+    margin-top: 0px;
+    width: 70%;
+  }
+  .mission__container .container__description {
+    margin-top: 0px;
+    width: 75%;
+  }
+  .mission__image {
+    margin-top: 38px;
+  }
+  .mission__image img {
+    width: 85%;
+    height: 194px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
