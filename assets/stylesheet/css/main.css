@@ -21,8 +21,8 @@
   --h2-font-size: 24px;
   --h3-font-size: 20px;
   --h5-font-size: 14px;
-  --h5-font-size: 10px;
-  --p1-font-size: .938rem;
+  --h6-font-size: 10px;
+  --p1-font-size: 14px;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
   /* Font weight */
@@ -331,8 +331,10 @@ img {
     overflow: scroll;
     grid-template-columns: repeat(9, 150px);
   }
+  .news__layout .news__item {
+    padding: 16px;
+  }
   .news__layout .news__item .item__image {
-    width: 224px;
     height: 140px;
     background-size: cover;
   }
@@ -423,6 +425,57 @@ img {
   .mission__image img {
     width: 85%;
     height: 194px;
+  }
+}
+.beneficiaries {
+  padding: 80px 120px 193px 120px;
+  background-color: var(--white);
+}
+.beneficiaries__heading {
+  color: var(--dark-blue);
+}
+.beneficiaries__container {
+  display: grid;
+  grid-template-columns: repeat(5, 330px);
+  gap: 60px;
+  overflow-x: scroll;
+  margin-top: 50px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.beneficiaries__container::-webkit-scrollbar {
+  display: none;
+}
+.beneficiaries__container .container__card .card__image {
+  height: 350px;
+  background-color: var(--dusty-pink);
+  background-size: cover;
+  background-position: center;
+}
+.beneficiaries__container .container__card .card__text {
+  margin-top: 15px;
+  width: 250px;
+}
+
+@media only screen and (max-width: 768px) {
+  .beneficiaries {
+    padding: 16px 16px 68px 32px;
+    margin-top: 25px;
+  }
+  .beneficiaries__container {
+    grid-template-columns: repeat(5, 200px);
+    gap: 30px;
+    margin-top: 15px;
+  }
+  .beneficiaries__container .container__card {
+    width: 205px;
+  }
+  .beneficiaries__container .container__card .card__image {
+    width: 202px;
+    height: 269px;
+  }
+  .beneficiaries__container .container__card .card__text {
+    width: 220px;
   }
 }
 
