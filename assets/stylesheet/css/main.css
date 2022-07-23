@@ -425,5 +425,32 @@ img {
     height: 194px;
   }
 }
+.benificiaries {
+  padding: 60px 0;
+  background-color: var(--white);
+}
+.benificiaries__heading {
+  color: var(--dark-blue);
+}
+.benificiaries__container {
+  display: grid;
+  grid-template-columns: repeat(5, 270px);
+  gap: 30px;
+  overflow-x: scroll;
+  margin-top: 50px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.benificiaries__container::-webkit-scrollbar {
+  display: none;
+}
+.benificiaries__container .container__card .card__image {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+}
+.benificiaries__container .container__card .card__text {
+  margin-top: 15px;
+}
 
 /*# sourceMappingURL=main.css.map */
