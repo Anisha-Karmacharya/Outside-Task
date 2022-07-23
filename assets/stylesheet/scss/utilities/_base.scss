@@ -98,7 +98,7 @@ h2{
     font-weight: var(--font-normal) !important;
     font-size: var(--h2-font-size) !important;
     line-height: 120% !important;
-    letter-spacing: -0.02em;  
+    // letter-spacing: -0.02em;  
 }
 h3{
     font-family: var(--header-font) !important;
@@ -106,7 +106,7 @@ h3{
     font-weight: var(--font-normal) !important;
     font-size: var(--h3-font-size) !important;
     line-height: 120% !important;
-    letter-spacing: -0.02em;  
+    // letter-spacing: -0.02em;  
 }
 p{
     font-family: var(--header-font)!important;
@@ -114,12 +114,12 @@ p{
     font-weight: var(--font-normal) !important;
     font-size: var(--p1-font-size)!important;
     line-height: 140%;
-    letter-spacing: -0.01em;
+    // letter-spacing: -0.01em;
 }
 h5{
     font-family: 'Inter';
     font-size: var(--h5-font-size) !important;
-    letter-spacing: 0.05em;
+    // letter-spacing: 0.05em;
     text-transform: uppercase;
     line-height: 24px !important;
     font-weight: var(--font-bold) !important;
@@ -128,7 +128,7 @@ h6{
     font-weight: var(--font-bold)!important;
     font-size: var(--h6-font-size)!important;
     line-height: 14px!important;
-    letter-spacing: 0.05em;
+    // letter-spacing: 0.05em;
     text-transform: uppercase;
 }
 
