@@ -1,0 +1,24 @@
+.gallery{
+    background-color: var(--white);
+    padding: 60px 120px;
+    &__layout{
+        h5{
+            color: var(--dark-blue);
+        }
+        .layout__item{
+            border: 1px solid var(--dusty-pink);
+            padding: 40px;
+            .item{
+                &__image{
+                    background-color: black;
+                    width: 321px;
+                    height: 240px;                 
+                }
+                &__text{
+                    margin-top: 12px;
+                    color: var(--gretprup);
+                }
+            }
+        }
+    }
+}
