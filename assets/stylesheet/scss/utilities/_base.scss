@@ -3,10 +3,7 @@
     font-family: 'Galaxie Copernicus';
     src: url("../../../fonts/GalaxieCopernicus-Book.otf");
 }
-@font-face {
-    font-family: 'Inter';
-    src: url("../../../fonts/Inter-VariableFont_slnt\,wght.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 // Variable
 :root{
     --header-height: 3.5rem; // 56px
@@ -22,7 +19,7 @@
     --white: #FFFFFF;
     /* Font and typography */
     --header-font: 'Galaxie Copernicus';
-    --body-font: 'Inter';
+    --body-font: 'Inter', sans-serif;
     --h1-font-size: 32px;
     --h2-font-size: 24px;
     --h3-font-size: 20px;
@@ -95,8 +92,44 @@ button{
     outline: none;
 }
 
-h1,h2,h3{
-    font-weight: var(--font-normal);  
+h2{
+    font-family: var(--header-font) !important;
+    font-style: normal;
+    font-weight: var(--font-normal) !important;
+    font-size: var(--h2-font-size) !important;
+    line-height: 120% !important;
+    // letter-spacing: -0.02em;  
+}
+h3{
+    font-family: var(--header-font) !important;
+    font-style: normal ;
+    font-weight: var(--font-normal) !important;
+    font-size: var(--h3-font-size) !important;
+    line-height: 120% !important;
+    // letter-spacing: -0.02em;  
+}
+p{
+    font-family: var(--header-font)!important;
+    font-style: normal !important;
+    font-weight: var(--font-normal) !important;
+    font-size: var(--p1-font-size)!important;
+    line-height: 140%;
+    // letter-spacing: -0.01em;
+}
+h5{
+    font-family: 'Inter';
+    font-size: var(--h5-font-size) !important;
+    // letter-spacing: 0.05em;
+    text-transform: uppercase;
+    line-height: 24px !important;
+    font-weight: var(--font-bold) !important;
+}
+h6{
+    font-weight: var(--font-bold)!important;
+    font-size: var(--h6-font-size)!important;
+    line-height: 14px!important;
+    // letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
 ul{

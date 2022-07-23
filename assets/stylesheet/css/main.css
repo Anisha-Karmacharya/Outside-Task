@@ -1,10 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
 @font-face {
   font-family: "Galaxie Copernicus";
   src: url("../../../fonts/GalaxieCopernicus-Book.otf");
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../../../fonts/Inter-VariableFont_slnt,wght.ttf");
 }
 :root {
   --header-height: 3.5rem;
@@ -19,7 +16,7 @@
   --white: #FFFFFF;
   /* Font and typography */
   --header-font: "Galaxie Copernicus";
-  --body-font: "Inter";
+  --body-font: "Inter", sans-serif;
   --h1-font-size: 32px;
   --h2-font-size: 24px;
   --h3-font-size: 20px;
@@ -88,8 +85,43 @@ button {
   outline: none;
 }
 
-h1, h2, h3 {
-  font-weight: var(--font-normal);
+h2 {
+  font-family: var(--header-font) !important;
+  font-style: normal;
+  font-weight: var(--font-normal) !important;
+  font-size: var(--h2-font-size) !important;
+  line-height: 120% !important;
+}
+
+h3 {
+  font-family: var(--header-font) !important;
+  font-style: normal;
+  font-weight: var(--font-normal) !important;
+  font-size: var(--h3-font-size) !important;
+  line-height: 120% !important;
+}
+
+p {
+  font-family: var(--header-font) !important;
+  font-style: normal !important;
+  font-weight: var(--font-normal) !important;
+  font-size: var(--p1-font-size) !important;
+  line-height: 140%;
+}
+
+h5 {
+  font-family: "Inter";
+  font-size: var(--h5-font-size) !important;
+  text-transform: uppercase;
+  line-height: 24px !important;
+  font-weight: var(--font-bold) !important;
+}
+
+h6 {
+  font-weight: var(--font-bold) !important;
+  font-size: var(--h6-font-size) !important;
+  line-height: 14px !important;
+  text-transform: uppercase;
 }
 
 ul {
@@ -200,7 +232,8 @@ img {
   margin-bottom: 0px;
 }
 .button__text p {
-  font-family: var(--body-font);
+  font-family: var(--body-font) !important;
+  font-weight: var(--font-bold) !important;
 }
 .button__icon {
   display: grid;
@@ -242,44 +275,6 @@ img {
   border: 1px solid #fff;
   padding: 40px;
   color: var(--dark-grey);
-}
-.news__layout .news__item h2 {
-  font-family: var(--header-font);
-  font-style: normal;
-  font-weight: var(--font-normal);
-  font-size: var(--h2-font-size);
-  line-height: 120%;
-  letter-spacing: -0.02em;
-}
-.news__layout .news__item h3 {
-  font-family: var(--header-font);
-  font-style: normal;
-  font-weight: var(--font-normal);
-  font-size: var(--h3-font-size);
-  line-height: 120%;
-  letter-spacing: -0.02em;
-}
-.news__layout .news__item p {
-  font-family: var(--header-font);
-  font-style: normal;
-  font-weight: var(--font-normal);
-  font-size: var(--p1-font-size);
-  line-height: 140%;
-  letter-spacing: -0.01em;
-}
-.news__layout .news__item h5 {
-  font-size: var(--h5-font-size);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  line-height: 24px;
-  font-weight: var(--font-bold);
-}
-.news__layout .news__item h6 {
-  font-weight: var(--font-bold);
-  font-size: var(--h6-font-size);
-  line-height: 14px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
 }
 .news__layout .news__item .item__heading {
   color: var(--dark-blue);
@@ -369,6 +364,65 @@ img {
   }
   .news__layout .news__item:nth-child(1), .news__layout .news__item:nth-child(6) {
     padding: 16px 0;
+  }
+}
+.mission {
+  padding: 60px 0;
+  color: var(--white);
+  position: relative;
+  z-index: -2;
+}
+.mission__bg {
+  background-color: #8c2531;
+  height: 67%;
+  width: 98%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.mission__container {
+  padding: 80px 120px 0px 120px;
+}
+.mission__container .container__heading {
+  margin-top: 30px;
+  width: 60%;
+}
+.mission__container .container__description {
+  margin-top: 20px;
+  width: 65%;
+}
+.mission__image {
+  margin-top: 80px;
+}
+.mission__image img {
+  width: 95%;
+}
+
+@media only screen and (max-width: 768px) {
+  .mission {
+    padding: 0px;
+  }
+  .mission__bg {
+    height: 82%;
+    width: 95%;
+  }
+  .mission__container {
+    padding: 40px 16px 0px 32px;
+  }
+  .mission__container .container__heading {
+    margin-top: 0px;
+    width: 70%;
+  }
+  .mission__container .container__description {
+    margin-top: 0px;
+    width: 75%;
+  }
+  .mission__image {
+    margin-top: 38px;
+  }
+  .mission__image img {
+    width: 85%;
+    height: 194px;
   }
 }
 
