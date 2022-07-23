@@ -635,10 +635,16 @@ img {
 }
 .footer {
   background-color: var(--dark-grey);
-  padding: 76px 120px;
+  padding: 76px 120px 41px 120px;
   height: 415px;
   width: 100%;
   color: var(--white);
+}
+.footer .social-1, .footer .social-2 {
+  gap: 30px;
+}
+.footer .social-1 {
+  display: none;
 }
 .footer__links {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -647,6 +653,12 @@ img {
 }
 .footer__links .links__pages {
   width: 30%;
+}
+.footer__info, .footer__copy {
+  opacity: 0.5;
+}
+.footer__info {
+  width: 17%;
 }
 
 /*# sourceMappingURL=main.css.map */
