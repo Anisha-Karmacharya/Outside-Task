@@ -46,33 +46,3 @@
     }
 
 }
-@media only screen and (max-width: 768px) {
-    .hero{
-        margin-left: 10px;
-        &__main {
-            padding: 0 25px !important;
-            margin: 20px 5px 0px 16px;
-          }
-          .main{
-            &__button{
-                margin-top: 20px !important;
-                float: left !important;
-            }
-            &__text{
-                width: 70.75%;
-
-            }
-        }
-        &__bg{
-           bottom: 150px;
-           margin-left: 32px;
-        }
-        &__image{
-            margin-top: 50px !important;
-            margin-left: 16px;
-            img{
-                height: 196px;
-            }
-        }
-    }    
-}

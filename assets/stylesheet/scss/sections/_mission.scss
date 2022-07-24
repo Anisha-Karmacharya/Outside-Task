@@ -32,33 +32,3 @@
     }
   }
 }
-@media only screen and (max-width: 768px) {
-    .mission {
-        padding: 0px;
-        &__bg{
-            height: 82%;
-            width: 95%;
-        }
-        &__container {
-            padding: 40px 16px 0px 32px;
-            .container {
-                
-                &__heading {
-                  margin-top: 0px;
-                  width: 70%;
-                }
-                &__description {
-                  margin-top: 0px;
-                  width: 75%;
-                }
-            }
-        }
-        &__image {
-            margin-top: 38px;
-            img {
-                width: 85%;
-                height: 194px;
-            }
-          }
-    }
-}

@@ -31,26 +31,4 @@
     }
   }
 }
-@media only screen and (max-width: 768px) {
-  .beneficiaries {
-    padding: 16px 16px 68px 32px;
-    margin-top: 25px;
-    &__container {
-      grid-template-columns: repeat(5, 200px);
-      gap: 30px;
-      margin-top: 15px;
-      .container__card {
-        width: 205px;
-        .card {
-          &__image {
-            width: 202px;
-            height: 269px;
-          }
-          &__text {
-            width: 220px;
-          }
-        }
-      }
-    }
-  }
-}
+
