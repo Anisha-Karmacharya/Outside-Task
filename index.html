@@ -22,7 +22,108 @@
   </head>
   <body>
     <!-- Social Bar and Nav Bar -->
-    <header class="header"></header>
+    <header class="header">
+      <div class="header__overlay" id="overlay"></div>
+      <div class="header__social">
+          <div class="d-flex justify-content-end align-items-center">
+              <div class="social__icon">
+                <i class='bx bxl-twitter'></i>
+               
+              </div>
+              <div class="social__icon">
+                <i class='bx bxl-linkedin'></i>
+              </div>
+          </div>
+      </div>
+      <div class="header__nav-bar" id="navBar">
+          <div class="d-flex justify-content-between align-items-center">
+              <div class="nav-bar__logo">
+                  <img src="./assets/img/logo.png" alt="">
+              </div>
+              <div class="nav-bar__desktop">
+                  <div class="desktop__nav-items d-flex">
+                      <div class="nav-items__single-item">
+                          <p class="p2 single-item__text">Founders</p>                
+                      </div>
+                      <div class="nav-items__single-item">
+                          <p class="p2 single-item__text">Beneficiaries</p>
+                      </div>
+                      <div class="nav-items__single-item" id="scholarship">
+                          <p class="p2 single-item__text">Scholarships</p>
+                          <div class="single-item__dropdown container-fluid">
+                              <div class="row justify-content-end">
+                                  <div>
+                                      <div class="dropdown__item">
+                                          <h3>Sed ut tincidunt euismod malesuada</h3>
+                                      </div>
+                                      <div class="dropdown__item">
+                                          <h3>Nunc, sit in varius pulvinar</h3>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="nav-items__single-item">
+                          <p class="p2 single-item__text">Press</p>
+                      </div>
+                      <div class="nav-items__single-item">
+                          <p class="p2 single-item__text">Blog</p>
+                      </div>
+                      <div class="nav-items__single-item">
+                          <p class="p2 single-item__text">Contact</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="nav-bar__mobile">
+                  <div class="mobile__burger" id="mobileNavMenu">
+                    <i class='bx bx-menu' id="menu"></i>
+                  </div>
+                  <div class="mobile__nav-items" id="mobileNav--items">
+                      <div class="nav-items__single-item">
+                          <p class="p2 single-item__text">Founders</p>
+                          <div class="single-item__dropdown">
+                              <ul>
+                                  <li class="dropdown__item">
+                                      <p class="p2">Maria Kenter</p>
+                                  </li>
+                                  <li class="dropdown__item">
+                                      <p class="p2">Roger Septimus</p>
+                                  </li>
+                              </ul>
+      
+                          </div>
+                      </div>
+                      <div class="nav-items__single-item">
+                          <p class="p2 single-item__text">Beneficiaries</p>
+                      </div>
+                      <div class="nav-items__single-item">
+                          <p class="p2 single-item__text">Scholarships</p>
+                          <div class="single-item__dropdown">
+                              <ul>
+                                  <li class="dropdown__item">
+                                      <p class="p2">Sed ut tincidunt euismod malesuada</p>
+                                  </li>
+                                  <li class="dropdown__item">
+                                      <p class="p2">Nunc, sit in varius pulvinar</p>
+                                  </li>
+                              </ul>
+      
+                          </div>
+                      </div>
+                      <div class="nav-items__single-item">
+                          <p class="p2 single-item__text">Press</p>
+                      </div>
+                      <div class="nav-items__single-item">
+                          <p class="p2 single-item__text">Contact</p>
+                      </div>
+                      <div class="nav-items__single-item">
+                          <p class="p2 single-item__text">Blog</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </header>
     <main>
       <!-- Home Section -->
       <section class="hero">
@@ -337,6 +438,7 @@
       </div>
 
     </footer>
+    <script src="./assets/js/main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
