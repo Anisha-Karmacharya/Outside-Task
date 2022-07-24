@@ -4,18 +4,17 @@
     padding-bottom: 60px;
     &__bg{
         height: 100%;
-        width: 98%;
+        width: 97%;
         background-color: var(--white);
         position: absolute;
         bottom: 295px;
         right: 0;
         z-index: -2;
-        margin-left: 85px;
     }
     &__main{
         margin-top: 40px;
-        margin-left: 85px;
-        margin-right: 100px;
+        margin-left: 120px;
+        margin-right: 120px;
         .main{
             &__text{
                 color: var(--dark-blue);
@@ -40,7 +39,7 @@
         justify-content: flex-end;
         img{
             
-            width: 95%;
+            width: 94%;
             float: right;
             transform-origin: top center;
         }
