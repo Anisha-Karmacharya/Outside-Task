@@ -5,7 +5,7 @@
   position: relative;
   z-index: -2;
   &__bg {
-    background-color: #8c2531;
+    background-color: var(--dark-red);
     height: 67%;
     width: 98%;
     position: absolute;

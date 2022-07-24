@@ -244,15 +244,16 @@ img {
 }
 .header__nav-bar .nav-bar__mobile .mobile__nav-items {
   position: absolute;
+  display: none;
   top: 100px;
   left: 0;
   background-color: var(--dark-blue);
   width: 100%;
   height: 100vh;
-  padding: 35px 32px;
+  padding: 16px 32px 120px 32px;
 }
 .header__nav-bar .nav-bar__mobile .mobile__nav-items .nav-items__single-item {
-  padding: 20px 0;
+  padding: 12px 0;
   border-top: 1px solid hsla(0deg, 0%, 77%, 0.1);
 }
 .header__nav-bar .nav-bar__mobile .mobile__nav-items .nav-items__single-item--active .single-item__text {
@@ -267,6 +268,51 @@ img {
   margin-top: 12px;
 }
 
+@media (max-width: 576px) {
+  .header__social {
+    padding: 20px 32px;
+  }
+  .header__social > div {
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .header__nav-bar--active {
+    background-color: var(--dark-blue) !important;
+    color: var(--white);
+  }
+  .header__nav-bar--active .nav-bar__logo {
+    padding-left: 16px;
+  }
+  .header__nav-bar--active .nav-bar__logo img {
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+  }
+  .header__nav-bar--active .nav-bar__mobile .mobile__burger img {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
+  .header__nav-bar .nav-bar__desktop {
+    display: none;
+  }
+  .header__nav-bar .nav-bar__mobile {
+    display: block;
+  }
+}
+@media (max-width: 992px) {
+  .header__social {
+    padding-right: 30px;
+  }
+  .header__nav-bar {
+    padding: 35px 32px 35px 20px;
+  }
+  .header__nav-bar .nav-bar__logo {
+    padding-left: 16px;
+  }
+  .header__nav-bar .nav-bar__logo img {
+    height: 32px;
+  }
+}
 .hero {
   position: relative;
   z-index: -1;
@@ -496,7 +542,7 @@ img {
   z-index: -2;
 }
 .mission__bg {
-  background-color: #8c2531;
+  background-color: var(--dark-red);
   height: 67%;
   width: 98%;
   position: absolute;
@@ -813,7 +859,7 @@ img {
   .footer__info--mob {
     display: flex !important;
     justify-content: space-between;
-    width: 65% !important;
+    width: 85% !important;
     opacity: 0.5;
   }
   .footer__copy--mob {
