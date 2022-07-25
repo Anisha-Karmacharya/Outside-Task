@@ -1,0 +1,43 @@
+.footer {
+  background-color: var(--dark-grey);
+  padding: 76px 120px 41px 120px;
+  height: 415px;
+  width: 100%;
+  color: var(--white);
+  .social-1,
+  .social-2 {
+    gap: 30px;
+  }
+  .social-1 {
+    display: none;
+  }
+  &__links {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 40px;
+    padding-top: 20px;
+    .links {
+      &__pages {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+      }
+      &__pages--mob{
+        display: none !important;
+      }
+    }
+  }
+  &__info,
+  &__copy {
+    opacity: 0.5;
+  }
+
+  &__info {
+    width: 17%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info--mob,
+  &__copy--mob {
+    display: none !important;
+  }
+}

@@ -1,2 +1,11 @@
 @use './utilities/base';
 @use './layout/header';
+@use './sections/hero';
+@use './components/buttons';
+@use './sections/news';
+@use './sections/mission';
+@use './sections/beneficiaries';
+@use './sections/founders';
+@use './sections/gallery';
+@use './layout/footer';
+@use './utilities/mediaQueries';

@@ -1,12 +1,9 @@
 
 @font-face {
     font-family: 'Galaxie Copernicus';
-    src: url("../fonts/GalaxieCopernicus-Book.otf");
+    src: url("../../fonts/GalaxieCopernicus-Book.otf");
 }
-@font-face {
-    font-family: 'Inter';
-    src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 // Variable
 :root{
     --header-height: 3.5rem; // 56px
@@ -19,26 +16,30 @@
     --dark-grey: #3c3c3c;
     --dark-red: #8C2531;
     --beige: #D7C3AE;
+    --white: #FFFFFF;
     /* Font and typography */
-    /*.5rem = 8px | 1rem = 16px ...*/
     --header-font: 'Galaxie Copernicus';
-    --body-font: 'Inter';
-
-    --big-font-size: 2rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: .938rem;
+    --body-font: 'Inter', sans-serif;
+    --h1-font-size: 32px;
+    --h2-font-size: 24px;
+    --h3-font-size: 20px;
+    --h5-font-size: 14px;
+    --h6-font-size: 10px;
+    --p1-font-size: 14px;
+    --p2-font-size: 12px;
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
 
     // Responsive typography
     @media screen and (min-width: 968px){
         --big-font-size: 3.5rem;
-        --h1-font-size: 2.25rem;
-        --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
+        --h1-font-size: 64px;
+        --h2-font-size: 44px;
+        --h3-font-size: 32px;
+        --h5-font-size: 24px;
+        --h6-font-size: 14px;
+        --p1-font-size: 18px;
+        --p2-font-size: 14px;
         --small-font-size: .875rem;
         --smaller-font-size: .813rem;
     }
@@ -78,12 +79,13 @@ body,
 button,
 input,
 textarea{
-    font-family: var(--body-font);
+    font-family: var(--body-font) !important;
     font-size: var(--normal-font-size);
 }
 
 body{
     margin: var(--header-height) 0 0 0;
+    background-color: var(--dusty-pink) !important;
 }
 
 button{
@@ -92,8 +94,53 @@ button{
     outline: none;
 }
 
-h1,h2,h3{
-    font-weight: var(--font-normal);  
+h2{
+    font-family: var(--header-font) !important;
+    font-style: normal;
+    font-weight: var(--font-normal) !important;
+    font-size: var(--h2-font-size) !important;
+    line-height: 120% !important;
+    letter-spacing: -0.02em;  
+}
+h3{
+    font-family: var(--header-font) !important;
+    font-style: normal ;
+    font-weight: var(--font-normal) !important;
+    font-size: var(--h3-font-size) !important;
+    line-height: 120% !important;
+    letter-spacing: -0.02em;  
+}
+p{
+    font-family: var(--header-font)!important;
+    font-style: normal !important;
+    font-weight: var(--font-normal) !important;
+    font-size: var(--p1-font-size)!important;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+}
+.p2{
+    font-family: var(--body-font)!important;
+    font-style: normal !important;
+    font-weight: var(--font-normal) !important;
+    font-size: var(--p2-font-size)!important;
+    line-height: 140%;
+    color: var(--white);
+    letter-spacing: 0.02em;
+}
+h5{
+    font-family: 'Inter';
+    font-size: var(--h5-font-size) !important;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    line-height: 24px !important;
+    font-weight: var(--font-bold) !important;
+}
+h6{
+    font-weight: var(--font-bold)!important;
+    font-size: var(--h6-font-size)!important;
+    line-height: 14px!important;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
 ul{
@@ -107,44 +154,3 @@ img{
     max-width: 100%;
     height: auto;
 }
-/* For small devices */
-@media screen and (max-width: 400px) {
-    .nav__menu {
-      padding: 2rem 0.25rem 4rem;
-    }
-    .nav_list {
-      column-gap: 0;
-    }
-  }
-  /* For medium devices */
-  @media screen and (min-width: 568px) {
-    .nav__menu {
-      padding: 2rem 0.25rem 4rem;
-    }
-    .nav_list {
-      column-gap: 0;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    body {
-      margin: 0;
-    }
-    .header {
-      top: 0;
-      bottom: initial;
-    }
-    .nav {
-      height: 4.5rem;
-    }
-    .nav__icon, .nav__close, .nav__toggle {
-      display: none;
-    }
-    .nav__list {
-      display: flex;
-      column-gap: 2rem;
-    }
-    .nav__menu {
-      margin-left: auto;
-      padding: 4rem 0.25rem;
-    }
-  }

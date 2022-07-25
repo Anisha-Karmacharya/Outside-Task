@@ -1,0 +1,35 @@
+.founders{
+    padding: 80px 0px 0px 0px;
+    position: relative;
+    color: var(--white);
+    background-image: linear-gradient(to bottom, var(--beige) 70%, var(--white) 30%) ;
+    z-index: -2;
+    &__heading{
+       padding-left: 120px;
+    }
+    &__container{
+        padding-left: 60px;
+        padding-right: 60px;
+        .container__all-founders{
+            margin-top: 60px;
+            .all-founders__founder{
+                height: 40vw;
+                margin: auto;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                align-items: flex-end;
+                z-index: -1;
+                .founder__detail{
+                    padding: 60px
+                }
+                &:last-child{
+                    margin-top: 20px;
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+  
